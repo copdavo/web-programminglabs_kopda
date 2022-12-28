@@ -47,6 +47,10 @@
                     width: 200px;
                     height: 50px;
                     float: right;
+                }
+                .d {
+                    position: relative;
+                    left: 10px;
                 }            
             </style>    
     </head>
@@ -57,20 +61,40 @@
 
         <div class="content">
             <h1>Inline</h1>
-            <div class="a">block 1</div>
-            <div class="a">block 2</div>
-            <div class="a">block 3</div>
+                <div class="a">block 1</div>
+                <div class="a">block 2</div>
+                <div class="a">block 3</div>
 
             <h1>Float</h1>
-            <div class="b">block 1</div>
-            <div class="b">block 2</div>
-            <div class="b">block 3</div>
+                <div class="b">block 1</div>
+                <div class="b">block 2</div>
+                <div class="b">block 3</div>
 
-            <div class="c">block 1</div>
-            <div class="c">block 2</div>
-            <div class="c">block 3</div>
+                <div class="c">block 1</div>
+                <div class="c">block 2</div>
+                <div class="c">block 3</div>
 
             <div class="clear: both">end</div>
+
+            <h1>Relative</h1>
+                <div class="d">В тот год осенняя погода</div>
+                <div class="d" style="top: -10px; left: 50px;">Стояла долго на дворе,</div>
+                <div class="d" style="top: -1px; left: 70px;">Зимы ждала, ждала природа.</div>
+                <div class="d">Снег выпал только вянваре</div>
+
+            <h1>Absolute</h1>
+                <div>На третье в ночь. Проснувшись рано,</div>
+                <div>В окно увидела Татьяна</div>
+                <div style="position: absolute; left: 200px; top: 100px;">Поутру побелевший двор,</div>
+                <div>Куртины, кровли и забор.</div>
+            <h1>Fixed</h1>
+            <div style="position: fixed; bottom: 300px; right: 300px;">
+                На стенах лёгкие узоры,<br>
+                Деревья в зимнем серебре,<br>
+                Сорок есёлых на двореИ мягко устланые горы<br>
+                Зимы блистательным ковром.<br>
+                Всё ярко, всё белым кругом.
+            </div>
         </div>
         <div class="footer">
             Факультет бизнеса, ФБИ-01, 3 курс, 2022
