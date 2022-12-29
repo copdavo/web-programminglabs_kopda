@@ -3,42 +3,46 @@
     <head>
         <meeta charset="utf-8">
             <title>Копылов Виктор. ФБИ-01. ЛР5</title>
-            <link rel="systelesheet" href="lab6.css" type="text/css">
+            <link rel="stylesheet" href="lab6.css" type="text/css">
             <script>
                 console.log ('Всем привет!!!');
 
                 let x = 33;
                 let s = 'яблоки';
-                let if = 17;
+                //let if = 17;
                 console.log('x=', x, 's=', s);
-
-            </script>
+             </script>
+            <script src="lab6.js"></script>
     </head>
     <body>
         <div class="header">
-            Копылов Виктор
+            <div id="student">Копылов Виктор</div>
+                <div class="language">
+                <input type = "button" value="ru" onclick="setRussian()">
+                <input type = "button" value="en" onclick="setEnglish()">
+                </div>
         </div>
 
         <div class="content">
             <form>
                 <div>
                     <div>
-                        <span>Ваше имя</span>: <input type="text">
+                        <span id="Your-name">Ваше имя</span>: <input type="text" id="imput-name" placeholder="введите имя">
                     </div>
                     <div>
-                        <span>Ваша фамилия/span>: <input type="text">
+                        <span id="Your-surname">Ваша фамилия</span>: <input type="text" id="imput-surname" placeholder="введите фамилию">
                     </div>
                     <div>
-                        <span>Ваш возраст</span>: <input type="text">
+                        <span id="Your-age">Ваш возраст</span>: <input type="text" id="imput-age" placeholder="введите возраст">
                     </div>
                     <div>
-                        <input type="button" valve="oк">
-                        <input type="reset" valve="сброс">
+                        <input type="button" value="oк" id="ok-button">
+                        <input type="reset" value="сброс" id="reset-button">
                     </div>
                 </div>
             </form>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             Факультет бизнеса, ФБИ-01, 3 курс, 2022
         </div>
     </body>
