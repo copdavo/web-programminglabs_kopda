@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html, body{
+    height: 100%;
+    font-size: 12px;
+}
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background: url('https://hdoboi.kiev.ua/images/08.Nov.2019-reka-v-gorah-4k-ultra-hd.jpg');
+    background-color : black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.game-quiz-container{
+    width: 640px;
+    height: 640px;
+    background-color: rgb(163, 248, 225);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.game-details-container{
+    width: 80%;
+    height: 164px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-details-container h1{
+    font-size: 18px;
+}
+
+.game-question-container{
+    width: 80%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(59, 168, 128);
+    border-radius: 25px;
+}
+
+.game-question-container h1{
+    font-size: 18px;
+    text-align: center;
+    padding: 3px;
+}
+
+.game-options-container{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game-options-container span{
+    width: 45%;
+    height: 50px;
+    border: 4px solid rgb(56, 138, 176);
+    border-radius: 8px;
+    overflow: hidden;
+}
+span label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    font-weight: 610;
+    color: rgb(22, 22, 22);
+}
+
+span label:hover{
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+    color: rgb(186, 191, 255);
+}
+
+input[type="radio"] {
+    position: relative;
+    display: none;
+}
+
+
+input[type=radio]:checked ~ .option {
+	background: rgb(172, 177, 255);
+}
+
+.next-button-container{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.next-button-container button{
+    width: 128px;
+    height: 40px;
+    border-radius: 1px;
+    background: none;
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+    border: 2px solid rgb(160, 150, 194);
+    cursor: pointer;
+    outline: none;
+}
+.next-button-container button:hover{
+    background-color: rgb(163, 152, 205);
+}
+
+.modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(156, 118, 138); 
+    background-color: rgba(193, 126, 183, 0.4); 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    -webkit-animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.modal-content-container{
+    height: 330px;
+    width: 450px;
+    background-color: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2px;
+}
+
+.modal-content-container h1{
+    font-size: 18px;
+    height: 60px;
+    color: rgb(86, 67, 80);
+    text-align: center;
+}
+
+.grade-details{
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grade-details p{
+    color: white;
+    text-align: center;
+}
+
+.modal-button-container{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-button-container button{
+    width: 160px;
+    height: 50px;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(252, 242, 241);
+    color: rgb(62, 123, 126);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal-button-container button:hover{
+    background-color: rgb(83, 82, 82);
+}
+
+@media(min-width : 300px) and (max-width : 350px){
+    .game-quiz-container{
+        width: 90%;
+        height: 80vh;
+     }
+     .game-details-container h1{
+        font-size: 8px;
+     }
+ 
+     .game-question-container{
+        height: 180px;
+     }
+     .game-question-container h1{
+       font-size: 12px;
+    }
+ 
+    .game-options-container span{
+        width: 90%;
+        height: 40px;
+    }
+    .game-options-container span label{
+        font-size: 12px;
+    }
+    .modal-content-container{
+        width: 90%;
+        height: 400px;
+    }
+    
+    .modal-content-container h1{
+        font-size: 18px;
+    }
+}
+
+@media(min-width : 350px) and (max-width : 700px){
+   .game-quiz-container{
+       width: 90%;
+       height: 80vh;
+    }
+    .game-details-container h1{
+        font-size: 16px;
+    }
+
+    .game-question-container{
+        height: 128px;
+    }
+
+    .game-question-container h1{
+        font-size: 16px;
+     }
+
+    .game-options-container span{
+        width: 90%;
+    }
+    .modal-content-container{
+        width: 90%;
+        height: 400px;
+    }
+    .modal-content-container h1{
+        font-size: 20px;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
