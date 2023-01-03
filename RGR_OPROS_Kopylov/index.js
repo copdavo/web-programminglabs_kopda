@@ -336,7 +336,7 @@ function checkForAnswer() {
         }
     })
    
-    //проверка, чтобы убедиться, что радиовход был проверен или выбран параметр
+    //проверка, чтобы убедиться, что ответ был проверен или выбран параметр
     if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
         document.getElementById('option-modal').style.display = "flex"
     }
@@ -350,7 +350,7 @@ function checkForAnswer() {
             //установливает задержку номера вопроса до загрузки следующего вопроса
             setTimeout(() => {
                 questionNumber++
-            }, 800)
+            }, 1000)
         }
 
         else if (option.checked && option.value !== currentQuestionAnswer) {
@@ -362,7 +362,7 @@ function checkForAnswer() {
             //установливает задержку номера вопроса до загрузки следующего вопроса
             setTimeout(() => {
                 questionNumber++
-            }, 800)
+            }, 1000)
         }
     })
 }

@@ -2,18 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
   
 html, body{
     height: 100%;
     font-size: 12px;
+    
 }
 
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    
+
+
 }
 
 main{
@@ -42,6 +44,16 @@ main{
     border-radius: 5px;
 }
 
+.game-quiz-container::before{
+    width: 640px;
+    height: 640px;
+    background-color: rgb(163, 248, 225);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
 .game-details-container{
     width: 80%;
     height: 164px;
@@ -215,14 +227,14 @@ input[type=radio]:checked ~ .option {
         height: 80vh;
      }
      .game-details-container h1{
-        font-size: 8px;
+        font-size: 16px;
      }
  
      .game-question-container{
         height: 180px;
      }
      .game-question-container h1{
-       font-size: 12px;
+       font-size: 16px;
     }
  
     .game-options-container span{
@@ -230,7 +242,7 @@ input[type=radio]:checked ~ .option {
         height: 40px;
     }
     .game-options-container span label{
-        font-size: 12px;
+        font-size: 16px;
     }
     .modal-content-container{
         width: 90%;
@@ -282,3 +294,14 @@ input[type=radio]:checked ~ .option {
     from {opacity: 0;}
     to {opacity: 1;}
   }
+   animation-name: tspec;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /* step-start тоже */
+}
+ 
+@keyframes tspec {
+    0% { visibility: hidden; }
+    10% { visibility: visible; }
+    90% { visibility: visible; }
+    100% { visibility: hidden; }
