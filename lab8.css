@@ -30,9 +30,17 @@ body {
     right: 30px;
     top: 0px;
 }
-#today {
+#today, #result {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-left: 27px;
+    color: #7ad1c2;
+}
+#time {
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    padding-left: 30px;
-    color: #7ad1c2;
+    top: -80px;
+    padding-left: 170px;
+    color: #5fa0e6;
 }

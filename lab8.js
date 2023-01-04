@@ -13,5 +13,12 @@ function showDaysCount(params) {
     daysCount = Math.ceil(daysCount); //округляем в меньшую сторону
     result.innerHTML = 'С даты рождения прошло дней: ' + daysCount;
 }
+function showTime() {
+    let outTime = document.getElementById('time');
+    let currentTime = new Date();
+    outTime.innerHTML = currentTime.toLocaleTimeString('ru');
+}
+window.addEventListener('load', showTime);
+setInterval(showTime, 1000);
 
-window.addEventListener('load, showDate');
+window.addEventListener('load', showDate);
