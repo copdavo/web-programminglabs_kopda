@@ -38,3 +38,22 @@ function showCoords(event){
         let coords = document.querySelector('#coords');
         coords.addEventListener('mousemove', showCoords);
 });
+
+function showFocus(event){
+    event.target.style.color = 'Fuchsia'
+    event.target.style.fontSize = 30 + 'px'
+}
+
+function showBlur(event) {
+    event.target.style.color = 'black'
+    event.target.style.fontSize = 18 + 'px'
+}
+window.addEventListener('DOMContentLoaded', function() {
+    let text = document.querySelectorAll ('input[type = "text"]');
+    text [0].addEventListener('focus', showFocus);
+    text [1].addEventListener('focus', showFocus);
+    text [2].addEventListener('focus', showFocus);
+    text [0].addEventListener('blur', showBlur);
+    text [1].addEventListener('blur', showBlur);
+    text [2].addEventListener('blur', showBlur);
+});
