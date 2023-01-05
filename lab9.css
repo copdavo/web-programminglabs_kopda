@@ -35,3 +35,7 @@ body {
     color: rgb(208, 219, 230);
     text-align: center;
 }
+#output{
+    color: #b02626;
+    font-size: 20px;
+}
